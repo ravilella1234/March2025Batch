@@ -1,5 +1,7 @@
 package icici.loans.carloans;
 
+import java.util.ArrayList;
+
 public class DataTypes 
 {
 	byte b ; // 1 byte
