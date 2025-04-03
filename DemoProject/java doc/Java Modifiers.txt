@@ -1,0 +1,45 @@
+
+
+Access Modifier : public, protected, <default>, private
+Non-Access Modifier : final, abstract, strictfp, static, native, synchronized, transient, volatile
+
+AM NAM class ClassName
+{
+  AM NAM int a = 10;
+  
+  AM NAM void methodName()
+  { 
+    -----;
+  }
+}
+
+actual combinations:
+--------------------
+class/AM  : public, <default>
+class/NAM : final, abstract, strictfp
+
+method/AM  : public, protected, <default>, private
+method/NAM : final, abstract, strictfp, static, native, synchronized
+
+variable/AM  : public, protected, <default>, private
+variable/NAM : final, static, transient, volatile
+
+
+actual In Usage :
+-----------------
+class/AM  : public, <default>
+class/NAM : final, abstract
+
+method/AM  : public, protected, <default>, private
+method/NAM : final, abstract, static
+
+variable/AM  : public, protected, <default>, private
+variable/NAM : final, static
+
+
+	       In A Class   same package Class    outside package Class
+               ----------   ------------------    ----------------------
+public     -      Yes		    Yes			  Yes
+protected  -	  Yes		    Yes			  Yes (only through Class)
+<default>  -	  Yes		    Yes			   No
+private    -      Yes		    No			   No
