@@ -6,6 +6,11 @@ public class B extends A // isA Relationship
 	{
 		System.out.println("iam m2 in B class");
 	}
+	
+	public void m1()
+	{
+		System.out.println("iam m1 overriden in B class");
+	}
 
 	public static void main(String[] args) 
 	{
@@ -13,7 +18,8 @@ public class B extends A // isA Relationship
 		b.m2();
 		b.m1();
 		System.out.println(b.x);
-		
+		//b.x=200;
+				
 		A a = new A(); // HasA Relationship
 		a.m1();
 		System.out.println(a.x);

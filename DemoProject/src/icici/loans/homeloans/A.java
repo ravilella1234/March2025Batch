@@ -1,10 +1,10 @@
 package icici.loans.homeloans;
 
-public class A 
+public  class A 
 {
-	public int x = 10;
+	public  int x = 10;
 	
-	public void m1()
+	public  void m1()
 	{
 		System.out.println("iam m1 in A class");
 	}

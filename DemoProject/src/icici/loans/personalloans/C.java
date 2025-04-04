@@ -9,6 +9,11 @@ public class C extends A
 		System.out.println("iam m3 in C class");
 	}
 	
+	public void m1()
+	{
+		System.out.println("iam m1 overriden in C class");
+	}
+	
 	public static void main(String[] args) 
 	{
 		C c = new C();
