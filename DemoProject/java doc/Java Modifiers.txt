@@ -43,3 +43,8 @@ public     -      Yes		    Yes			  Yes
 protected  -	  Yes		    Yes			  Yes (only through Class)
 <default>  -	  Yes		    Yes			   No
 private    -      Yes		    No			   No
+
+
+final-class	- Restricted to inherit into child Classes.
+final-method	- Restricted to override the methods into child Classes,it just                       allows you to access.
+final-variable	- Restricted to override the variable value into child Classes,it                     just allows you to access.
