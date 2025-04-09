@@ -14,7 +14,8 @@ public class SingleDimenssionArray
 			System.out.println(a[i]);
 		}*/
 		
-		
+		int[] a1 = new int[] {10,20,30};
+		String[] obj = new String[] {"a1","a2"};
 		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter array size : ");
