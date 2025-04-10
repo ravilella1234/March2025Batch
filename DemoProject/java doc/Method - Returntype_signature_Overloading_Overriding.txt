@@ -1,0 +1,47 @@
+Method signature
+----------------
+
+int add(int a,int b)  --->  add(int,int)
+add(int eno,string ename) ---> add(int,string)
+add(float sal)  ---> add(float)
+add() ---> no signature
+
+A class cannot contain 2 same methods with same signatures, otherwise it’s a CE.
+
+Overloading:
+Two methods of a class are said to be overloaded if they have same name but different parameter types.
+
+
+Case1:automatic promotion in method overloading
+In method overloading if exact method match is not found then compiler doesn’t rise any CE. Compiler tries to promote the method argument to the next level and checks if any method match is available or not, if available then it will executed otherwise compiler promotes the method argument again to the next level. In this way compiler checks all the possible promotions, finally if no method is matched then compiler rises error.
+
+
+
+
+
+AM NAM returntype methodName(parameters)
+{
+    ----;
+}
+
+public static void add(int a, int b)
+{
+   int c = a+b;
+   system.out.println(c);
+}
+
+
+public static Integer add(int a, int b)
+{
+   int c = a+b;
+   system.out.println(c);
+   return c;
+}
+
+AM  : public,protected,<default>,private
+NAM : final,static,abstract,strictfp,native,synchronized
+returntype :
+------------
+1) void
+2) primitive datatype - byte,short,int,long,float,double,char,boolean
+3) ClassType - Integer,Number,Character,string, Object etc....
