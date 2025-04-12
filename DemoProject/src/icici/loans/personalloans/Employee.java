@@ -9,31 +9,49 @@ public class Employee
 	public Employee()
 	{
 		System.out.println("Hi iam default Constructor");
+		
+		System.out.println(this.eno);
+		System.out.println(this.ename);
+		System.out.println(this.sal);
 	}
 	
-	public Employee(int i) 
+	public Employee(int eno) 
 	{
-		eno = i;
+		this();
+		this.eno = eno;
+		
+		System.out.println(this.eno);
+		System.out.println(this.ename);
+		System.out.println(this.sal);
 	}
-
-	public Employee(int i, String string) 
-	{
-		eno = i;
-		ename = string;
-	}
-
 	
-
-	public Employee(int i, String string, float f) 
+	
+	public Employee(int eno, String ename) 
 	{
-		eno = i;
-		ename = string;
-		sal = f;
+		this(eno);
+		this.eno = eno;
+		this.ename = ename;
+		
+		System.out.println(this.eno);
+		System.out.println(this.ename);
+		System.out.println(this.sal);
+	}
+
+	public Employee(int eno, String ename, float sal) 
+	{
+		this(eno,ename);
+		this.eno = eno;
+		this.ename = ename;
+		this.sal = sal;
+		
+		System.out.println(this.eno);
+		System.out.println(this.ename);
+		System.out.println(this.sal);
 	}
 
 	public static void main(String[] args) 
 	{
-		Employee e1 = new Employee();
+		/*Employee e1 = new Employee();
 		System.out.println(e1.eno);
 		System.out.println(e1.ename);
 		System.out.println(e1.sal);
@@ -46,12 +64,10 @@ public class Employee
 		Employee e3 = new Employee(1745,"kiran");
 		System.out.println(e3.eno);
 		System.out.println(e3.ename);
-		System.out.println(e3.sal);
+		System.out.println(e3.sal);*/
 		
 		Employee e4 = new Employee(1746,"kiran",13.45f);
-		System.out.println(e4.eno);
-		System.out.println(e4.ename);
-		System.out.println(e4.sal);
+		
 	}
 
 }
