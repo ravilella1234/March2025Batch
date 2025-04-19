@@ -1,0 +1,34 @@
+Polymorphism:
+-------------
+Polymorphism is the ability of an object or a method to take multiple forms.
+
+a>About an object
+   i>parent class reference variable can refer/hold child class objects.
+   ii>interface reference variable can refer implementation class object.
+   
+   Ex:
+   ---
+   Parent p1=new Child1();
+       p1=new Child2();
+       P1=new Child3();
+
+b) about an method
+overloading is static polymorphism and overriding is dynamic polymorphism.
+
+Static polymorphism: 
+--------------------
+It is the process in which a call to an overloaded method is resolved at compile time not at runtime.
+In this process an overloaded method is called using the reference variable of a class and the same class method is executed.
+Test t=new Test();
+t.m1(10);
+t.m1(tr);
+
+Dynamic polymorphism: 
+---------------------
+It is the process in which a call to an overridden method(it means it is parent method) is resolved at runtime not at compile time.
+In this process an overridden method is called using parent reference variable but execution of the method is determined by the runtime object.
+
+Parent p1=new Child();
+p1.m1();//m1() method is overridden method of parent class.
+
+In the above m1() method of parent class is called.But m1() method of child class is executed.

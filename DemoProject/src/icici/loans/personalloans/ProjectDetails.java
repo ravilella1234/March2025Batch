@@ -21,7 +21,8 @@ public class ProjectDetails
 	public String packageName()
 	{
 		//System.out.println("Current Method Name is :" + getCurrentMethodName());
-		return this.getClass().getPackageName();
+		String a = this.getClass().getPackageName();
+		return a;
 	}
 	
 	

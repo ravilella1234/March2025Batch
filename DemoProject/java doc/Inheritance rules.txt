@@ -1,0 +1,46 @@
+Type of Inheritance :
+---------------------
+1) single
+2) Multi-level
+3) Hirarichal 
+4) Multiple - Not supported in java
+5) Hybrid
+
+How many way that inheretance can be formed:
+---------------------------------------------
+1) is-a relationship
+2) Has-a relationship
+
+Advantage of inheretance :
+--------------------------
+code re-usability by reducing code complexity
+
+
+Inheritance Principles:
+-----------------------
+1. is-a relationship/ Has-a relationship
+2. extends keyword / creating Parent class Object in child class
+3. code reuse & reduse code complexity
+4. subclass and superclass 
+5. inheritance with access modifiers (public,<default>)
+6. No multiple inheritance accepted
+7. Type casting-upcasting and downcasting 
+8. Overriding methods 
+9. Calling superclass methods 
+10. instanceof instruction 
+11. Fields and inheritance 
+12. Constructors and inheritance 
+13. Nested classes and inheritance 
+14. Abstract classes and inheritance
+
+
+Properties of inheritance:
+--------------------------
+i> All the variables/methods of parent class are by default available to child    class.
+   Hence on child class reference variables we can call both parent class    variables/methods and child class variables/methods.
+
+ii> None of the variables/methods of child class are available to the parent class     hence on parent class reference variable we can call only parent class     variables/methods but we cannot call child class variables/methods.
+
+iii> We can use parent class reference variable to refer/hold child class object.
+
+iv> We cannot use child class reference variable to hold parent class object.
