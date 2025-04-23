@@ -1,0 +1,86 @@
+A regular expression is a special sequence of characters that helps you 
+to match or find the other strings or set of strings, using a specialized syntax 
+held in a pattern. They can be used to search ,edit, or manipulate text & data.
+
+
+Ravilella.1981@gmail.com
+
+Used for the Pattern matching or string matching
+------------------------------------------------
+[a]
+[abc]		a,b or c
+[^abc]		any character except a,b,c
+[a-z]		a to z
+[A-Z]		A to Z
+[a-z A-Z 0-9]	a to z, A to Z ,0 to 9
+[0-9]		0 to 9 
+
+Quatifiers in Pattern matching
+-------------------------------
+[ ]?		occurs 0 or 1 time
+[ ]+		occurs 1 or more times
+[ ]*		occurs 0 or more times
+[ ]{n}		occurs for n times
+[ ]{n,}		Occurs n or more times
+[ ]{x,y}	occurs atleast x times but less than y times
+
+Regex MetaCharacters
+--------------------
+\d	[0-9]
+\D	[^0-9]
+\w	[a-z A-Z_ 0-9]
+\W	[^\w]
+
+Examples :-
+--------
+
+1) Mobile number starts with 6 or 9 and total digits should be 10
+
+ex 1:
+-----
+	[69][0-9]{9}
+	9876565456
+	6987765459
+
+ex 2:
+-----
+	+1-123-456-7890
+	+[1]-[0-9]{3}-[0-9]{3}-[0-9]{4}
+	+[1]-\d{3}-\d{3}-\d{4}
+	+[123]-\d{3}-\d{3}-\d{4}
+	
+	
+2) First Character should be UpperCase,contains lower case alphabets, only one digit allowed 
+   in between.
+
+	[A-Z][a-z]*[0-9][a-z]*
+	Rav2ikanth
+	
+	[ABC][a-z]*[0-9][a-z]*
+	Aav2ikanth
+	Bav2ikanth
+	Cav2ikanth
+	
+3) Email ID : Ravilella.1981@gmail.com
+
+	[A-Z][a-z \. 0-9]+[@][a-z]+[\.][a-z]{2,3}
+	[A-Z][a-z]+[.][0-9]{4}[@][a-z]+[.][a-z]{2,3}
+
+	
+
+Package java.util.regex
+
+Pattern	- A compiled representation of a regular expression
+Matcher - An engine that performs match operations on a character sequence by interpreting a Pattern
+PatternSyntaxException - Unchecked exception thrown to indicate a syntax error in a regular-expression 
+                         pattern.
+
+
+
+
+
+
+
+
+
+
