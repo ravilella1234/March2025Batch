@@ -24,24 +24,14 @@ public class ExceptionDemo
 				System.out.println(result);
 				break;
 			} 
-			
-			catch (NoSuchElementException e) 
-			{
-				e.printStackTrace();
-			} 
-			catch (ArithmeticException e) 
-			{
-				e.printStackTrace();
-			} 
-			catch (NullPointerException e) 
-			{
-				e.printStackTrace();
-			} 
 			catch (Exception e) 
 			{
 				e.printStackTrace();
 			} 
-			
+			finally 
+			{
+				System.out.println("iam finally Block...");
+			}
 		}	
 	}
 }
