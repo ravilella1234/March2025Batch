@@ -2,16 +2,13 @@ package com.project;
 
 public class TC_001 extends BaseClass
 {
-
-	public static void main(String[] args) 
-	{
-		browserLaunch("chrome");
+	
+	public static void main(String[] args) throws Exception 
+	{		
+		init();
 		
-		navigateUrl("https://www.amazon.in/");
+		browserLaunch("firefoxbrowser");
 		
-		browserLaunch("firefox");
-		
-		navigateUrl("https://www.flipkart.com/");
+		navigateUrl("amazonurl");
 	}
-
 }
