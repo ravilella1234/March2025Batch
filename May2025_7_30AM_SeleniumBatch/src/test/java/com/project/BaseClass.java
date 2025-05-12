@@ -68,5 +68,21 @@ public class BaseClass
 		driver.get(childProp.getProperty(url));
 	}
 	
+	
+	public static void clickElement(String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void typeText(String string, String string2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	public static void selectOption(String string, String string2) {
+		// TODO Auto-generated method stub
+		
+	}
+	
 
 }
