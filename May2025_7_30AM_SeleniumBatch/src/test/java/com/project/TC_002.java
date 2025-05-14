@@ -17,11 +17,13 @@ public class TC_002 extends BaseClass
 		
 		Thread.sleep(10000);
 		
-		selectOption("searchDropdownBox","Books");
+		selectOption("amazondropbox_id","Books");
 		
-		typeText("field-keywords","Harry Potter");
+		typeText("amazonsearchtextbox_name","Harry Potter");
 		
-		clickElement("//*[@id=\"nav-search-submit-button\"]");
+		clickElement("amazonsearchbutton_xpath");
+		
+		
 		
 		/*driver.findElement(By.id("searchDropdownBox")).sendKeys("Books");
 		
