@@ -107,7 +107,9 @@ public class BaseClass
 		if(!isElementPresent(locatorKey))
 			System.out.println("Element is not present");
 		
-		if(locatorKey.endsWith("_id")) {
+		element = driver.findElement(getLocator(locatorKey));
+		
+		/*if(locatorKey.endsWith("_id")) {
 			element = driver.findElement(By.id(orProp.getProperty(locatorKey)));
 		}else if (locatorKey.endsWith("_name")) {
 			element = driver.findElement(By.name(orProp.getProperty(locatorKey)));
@@ -121,18 +123,21 @@ public class BaseClass
 			element = driver.findElement(By.linkText(orProp.getProperty(locatorKey)));
 		}else if (locatorKey.endsWith("_partiallinktext")) {
 			element = driver.findElement(By.partialLinkText(orProp.getProperty(locatorKey)));
-		}
+		}*/
 		
 		return element;
 	}
 
-	private static boolean isElementPresent(String locatorKey) 
+	public static boolean isElementPresent(String locatorKey) 
 	{
 		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
 		
+		
 		try 
 		{
-			if(locatorKey.endsWith("_id")) {
+			wait.until(ExpectedConditions.presenceOfElementLocated(getLocator(locatorKey)));
+			
+			/*if(locatorKey.endsWith("_id")) {
 				wait.until(ExpectedConditions.presenceOfElementLocated((By.id(orProp.getProperty(locatorKey)))));
 			}else if (locatorKey.endsWith("_name")) {
 				wait.until(ExpectedConditions.presenceOfElementLocated((By.name(orProp.getProperty(locatorKey)))));
@@ -146,13 +151,35 @@ public class BaseClass
 				wait.until(ExpectedConditions.presenceOfElementLocated((By.linkText(orProp.getProperty(locatorKey)))));
 			}else if (locatorKey.endsWith("_partiallinktext")) {
 				wait.until(ExpectedConditions.presenceOfElementLocated((By.partialLinkText(orProp.getProperty(locatorKey)))));
-			}
+			}*/
 			return true;
 		} 
 		catch (Exception e) 
 		{
 			return false;
 		}
+	}
+	
+	public static By getLocator(String locatorKey)
+	{
+		By by = null;
+		
+		if(locatorKey.endsWith("_id")) {
+			by = By.id(orProp.getProperty(locatorKey));
+		}else if (locatorKey.endsWith("_name")) {
+			by = By.name(orProp.getProperty(locatorKey));
+		}else if (locatorKey.endsWith("_classname")) {
+			by = By.className(orProp.getProperty(locatorKey));
+		}else if (locatorKey.endsWith("_xpath")) {
+			by = By.xpath(orProp.getProperty(locatorKey));
+		}else if (locatorKey.endsWith("_css")) {
+			by = By.cssSelector(orProp.getProperty(locatorKey));
+		}else if (locatorKey.endsWith("_linktext")) {
+			by = By.linkText(orProp.getProperty(locatorKey));
+		}else if (locatorKey.endsWith("_partiallinktext")) {
+			by = By.partialLinkText(orProp.getProperty(locatorKey));
+		}			
+		return by;
 	}
 	
 
