@@ -6,6 +6,7 @@ import java.io.FileNotFoundException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Timeouts;
@@ -63,6 +64,11 @@ public class BaseClass
     	fis = new FileInputStream(f);
     	orProp = new Properties();
     	orProp.load(fis);
+    	
+    	f = new File(projectRootPath+testresourcesPath+"\\log4jconfig.properties");
+    	fis = new FileInputStream(f);
+    	PropertyConfigurator.configure(fis);
+ 
     }
 	
 	public static void browserLaunch(String browser)
