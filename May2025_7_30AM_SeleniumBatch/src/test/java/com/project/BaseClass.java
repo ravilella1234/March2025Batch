@@ -18,6 +18,9 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+
 import dev.failsafe.Timeout;
 
 public class BaseClass 
@@ -30,6 +33,8 @@ public class BaseClass
 	public static Properties mainProp;
 	public static Properties childProp;
 	public static Properties  orProp;
+	public static ExtentReports report;
+	public static ExtentTest test;
 	
     public static void init() throws Exception 
     {
@@ -68,6 +73,8 @@ public class BaseClass
     	f = new File(projectRootPath+testresourcesPath+"\\log4jconfig.properties");
     	fis = new FileInputStream(f);
     	PropertyConfigurator.configure(fis);
+    	
+    	report = ExtentManager.getInstance();
  
     }
 	
@@ -84,9 +91,12 @@ public class BaseClass
 		}
 	}
 	
-	public static void navigateUrl(String url)
+	public static void navigateUrl(String url) throws Exception
 	{
 		driver.get(childProp.getProperty(url));
+		driver.manage().window().maximize();
+		
+		Thread.sleep(10000);
 	}
 	
 	
