@@ -4,22 +4,27 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebDriver.Timeouts;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 
 import dev.failsafe.Timeout;
 
@@ -198,5 +203,40 @@ public class BaseClass
 		return by;
 	}
 	
+	
+	//Verification
+	public static boolean isLinksEqual(String expectedlink,String locotorKey) 
+	{
+		String actuallink = getLocatorType(locotorKey).getText();
+		if(actuallink.equals(expectedlink))
+			return true;
+		else
+			return false;
+	}
+	
+	//Reporting
+	public static void reportSuccess(String successMessage) 
+	{
+		test.log(Status.PASS, successMessage);
+	}
+
+	public static void reportFailure(String failureMessage,String element) throws Exception 
+	{
+		test.log(Status.FAIL, failureMessage);
+		takesScreenshot(element);
+	}
+
+	public static void takesScreenshot(String element) throws Exception
+	{
+		Date dt=new Date();
+		System.out.println(dt);
+		String dateFormat=dt.toString().replace(":", "_").replace(" ", "_")+".png";		
+		
+		//drawBorder(driver, element);
+		File scrFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		FileHandler.copy(scrFile, new File(System.getProperty("user.dir")+"//failurescreenshots//"+dateFormat));
+		
+		test.log(Status.INFO,"Screenshot --->" +test.addScreenCaptureFromPath(System.getProperty("user.dir")+"//failurescreenshots//"+dateFormat));
+	}
 
 }
