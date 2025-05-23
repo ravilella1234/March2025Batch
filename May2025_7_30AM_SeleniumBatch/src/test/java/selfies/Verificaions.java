@@ -31,16 +31,15 @@ public class Verificaions extends BaseClass
 		String value = driver.findElement(By.id("twotabsearchtextbox")).getAttribute("value");
 		System.out.println("value :" + value);*/
 		
+				
+		WebElement ele = driver.findElement(By.linkText("Sell"));
+		String actuallink = ele.getText();
+		String expectedllink = "Selll";
 		
-		//String actuallink = driver.findElement(By.linkText("Mobiles")).getText();
-		String expectedlink = "mobiles";
-		
-		if(!isLinksEqual(expectedlink,"mobilelink_linktext"))
-			//System.out.println("Both links are not equal....");
-			reportFailure("Both links are not equal....","mobilelink_linktext");
+		if(actuallink.equals(expectedllink))
+			reportSucess("Both links are equal...");
 		else
-			//System.out.println("Both links are equal...");
-			reportSuccess("Both links are equal...");
+			reportFailure("Both links are not equal...",ele);	
 		
 		report.flush();
 	}

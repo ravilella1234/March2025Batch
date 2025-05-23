@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -215,28 +216,34 @@ public class BaseClass
 	}
 	
 	//Reporting
-	public static void reportSuccess(String successMessage) 
+	public static void reportSucess(String successMessage) 
 	{
 		test.log(Status.PASS, successMessage);
 	}
 
-	public static void reportFailure(String failureMessage,String element) throws Exception 
+	public static void reportFailure(String FailureMessage,WebElement element ) throws Exception 
 	{
-		test.log(Status.FAIL, failureMessage);
+		test.log(Status.FAIL, FailureMessage);
 		takesScreenshot(element);
 	}
 
-	public static void takesScreenshot(String element) throws Exception
+	public static void takesScreenshot(WebElement element) throws Exception
 	{
 		Date dt=new Date();
 		System.out.println(dt);
 		String dateFormat=dt.toString().replace(":", "_").replace(" ", "_")+".png";		
 		
-		//drawBorder(driver, element);
+		drawBorder(driver, element);
 		File scrFile=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		FileHandler.copy(scrFile, new File(System.getProperty("user.dir")+"//failurescreenshots//"+dateFormat));
 		
 		test.log(Status.INFO,"Screenshot --->" +test.addScreenCaptureFromPath(System.getProperty("user.dir")+"//failurescreenshots//"+dateFormat));
+	}
+	
+	public static void drawBorder(WebDriver driver,WebElement element)
+	{
+		JavascriptExecutor js = ((JavascriptExecutor)driver);
+		js.executeScript("arguments[0].style.border='5px solid Red'",element);
 	}
 
 }
