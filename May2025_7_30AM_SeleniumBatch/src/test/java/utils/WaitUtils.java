@@ -13,11 +13,13 @@ public class WaitUtils
 {
 	private WebDriver driver;
     private WebDriverWait wait;
-	
+    
+ 
 	public WaitUtils(WebDriver driver,int timeoutInSeconds) {
 		
 		this.driver = driver;
 		wait =  new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(40));
 	}
     
 	// Method to wait for page title to be exact

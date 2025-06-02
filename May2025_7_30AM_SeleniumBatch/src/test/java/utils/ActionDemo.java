@@ -32,7 +32,7 @@ public class ActionDemo
 		a = new Actions(driver);
 		WebElement drag = driver.findElement(By.id(sourcelocator));
 		WebElement drop = driver.findElement(By.id(targetlocator));
-		
+
 		//a.dragAndDrop(drag, drop).perform();
 		a.clickAndHold(drag).moveToElement(drop).release(drag).build().perform();
 	}
@@ -47,7 +47,7 @@ public class ActionDemo
 		a.clickAndHold(e).moveByOffset(100, 0).release(e).build().perform();
 	}
 	
-	public static void  rightClick(String sourcelocator)
+	public static void rightClick(String sourcelocator)
 	{
 		driver.get("https://jqueryui.com/slider/");
 		a = new Actions(driver);
