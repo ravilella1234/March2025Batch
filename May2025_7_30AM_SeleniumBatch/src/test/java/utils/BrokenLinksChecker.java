@@ -16,7 +16,7 @@ public class BrokenLinksChecker
 	{
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get("https://www.google.com.");
+        driver.get("https://www.google.com");
 
         List<WebElement> allLinks = driver.findElements(By.tagName("a"));
         System.out.println("Total Links Found: " + allLinks.size());
@@ -35,7 +35,8 @@ public class BrokenLinksChecker
             try 
             {
                 // Create HTTP connection
-                HttpURLConnection connection = (HttpURLConnection) new URL(href).openConnection();
+            	URL url = new URL(href);
+                HttpURLConnection connection = (HttpURLConnection)url.openConnection();
                 connection.setRequestMethod("HEAD");
                 connection.connect();
                 int responseCode = connection.getResponseCode();
