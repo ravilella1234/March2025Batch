@@ -1,73 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Clicked on Image Link]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Image Link]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-06-07T09:00:27 IST" name="AutomationSuite" finished-at="2025-06-07T09:00:28 IST" duration-ms="296">
+  <suite started-at="2025-06-09T08:46:28 IST" name="AutomationSuite" finished-at="2025-06-09T08:49:48 IST" duration-ms="200382">
     <groups>
     </groups>
-    <test started-at="2025-06-07T09:00:27 IST" name="AutomationTest" finished-at="2025-06-07T09:00:28 IST" duration-ms="296">
-      <class name="testngpack.TNG_001">
-        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:27 IST" name="beforeSuite" finished-at="2025-06-07T09:00:27 IST" duration-ms="33" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeSuite -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:27 IST" name="beforeTest" finished-at="2025-06-07T09:00:27 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:28 IST" name="beforeClass" finished-at="2025-06-07T09:00:28 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:28 IST" name="beforeMethod" finished-at="2025-06-07T09:00:28 IST" duration-ms="7" status="PASS">
+    <test started-at="2025-06-09T08:46:28 IST" name="ChromeTest" finished-at="2025-06-09T08:47:56 IST" duration-ms="88338">
+      <class name="testngpack.TNG_002">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.TNG_002@25be7b63]" started-at="2025-06-09T08:47:29 IST" name="beforeMethod" finished-at="2025-06-09T08:47:46 IST" duration-ms="17210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="f()[pri:1, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:28 IST" name="f" finished-at="2025-06-07T09:00:28 IST" duration-ms="16" status="PASS">
+        <test-method signature="amazon()[pri:0, instance:testngpack.TNG_002@25be7b63]" started-at="2025-06-09T08:47:46 IST" name="amazon" finished-at="2025-06-09T08:47:55 IST" duration-ms="8707" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:28 IST" name="afterMethod" finished-at="2025-06-07T09:00:28 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- amazon -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.TNG_002@25be7b63]" started-at="2025-06-09T08:47:55 IST" name="afterMethod" finished-at="2025-06-09T08:47:56 IST" duration-ms="841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:28 IST" name="beforeMethod" finished-at="2025-06-07T09:00:28 IST" duration-ms="3" status="PASS">
+      </class> <!-- testngpack.TNG_002 -->
+      <class name="testngpack.RadioButton1">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.RadioButton1@304bb45b]" started-at="2025-06-09T08:46:51 IST" name="beforeMethod" finished-at="2025-06-09T08:47:10 IST" duration-ms="19077" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="a()[pri:3, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:28 IST" name="a" finished-at="2025-06-07T09:00:28 IST" duration-ms="10" status="PASS">
+        <test-method signature="radioButtonTest()[pri:0, instance:testngpack.RadioButton1@304bb45b]" started-at="2025-06-09T08:47:10 IST" name="radioButtonTest" finished-at="2025-06-09T08:47:10 IST" duration-ms="272" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- a -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:28 IST" name="afterMethod" finished-at="2025-06-07T09:00:28 IST" duration-ms="6" status="PASS">
+        </test-method> <!-- radioButtonTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.RadioButton1@304bb45b]" started-at="2025-06-09T08:47:10 IST" name="afterMethod" finished-at="2025-06-09T08:47:11 IST" duration-ms="907" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:28 IST" name="afterClass" finished-at="2025-06-07T09:00:28 IST" duration-ms="6" status="PASS">
+      </class> <!-- testngpack.RadioButton1 -->
+      <class name="testngpack.LinksTesting1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testngpack.LinksTesting1@723ca036]" started-at="2025-06-09T08:47:11 IST" name="setup" finished-at="2025-06-09T08:47:26 IST" duration-ms="15245" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:28 IST" name="afterTest" finished-at="2025-06-07T09:00:28 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="linktesting1()[pri:0, instance:testngpack.LinksTesting1@723ca036]" started-at="2025-06-09T08:47:26 IST" name="linktesting1" finished-at="2025-06-09T08:47:28 IST" duration-ms="2022" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Image Link]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- linktesting1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngpack.LinksTesting1@723ca036]" started-at="2025-06-09T08:47:28 IST" name="tearDown" finished-at="2025-06-09T08:47:29 IST" duration-ms="1034" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:testngpack.TNG_001@5e600dd5]" started-at="2025-06-07T09:00:28 IST" name="afterSuite" finished-at="2025-06-07T09:00:28 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- tearDown -->
+      </class> <!-- testngpack.LinksTesting1 -->
+      <class name="testngpack.CheckBox1">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.CheckBox1@5032714f]" started-at="2025-06-09T08:46:28 IST" name="beforeMethod" finished-at="2025-06-09T08:46:49 IST" duration-ms="20668" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterSuite -->
-      </class> <!-- testngpack.TNG_001 -->
-      <class name="testngpack.NewTest">
-        <test-method signature="f1()[pri:0, instance:testngpack.NewTest@a38c7fe]" started-at="2025-06-07T09:00:28 IST" name="f1" finished-at="2025-06-07T09:00:28 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkboxTest()[pri:0, instance:testngpack.CheckBox1@5032714f]" started-at="2025-06-09T08:46:49 IST" name="checkboxTest" finished-at="2025-06-09T08:46:49 IST" duration-ms="290" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- f1 -->
-      </class> <!-- testngpack.NewTest -->
-      <class name="testngpack.DemoClass">
-        <test-method signature="m1()[pri:0, instance:testngpack.DemoClass@6fdbe764]" started-at="2025-06-07T09:00:28 IST" name="m1" finished-at="2025-06-07T09:00:28 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- checkboxTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.CheckBox1@5032714f]" started-at="2025-06-09T08:46:49 IST" name="afterMethod" finished-at="2025-06-09T08:46:51 IST" duration-ms="1876" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- m1 -->
-      </class> <!-- testngpack.DemoClass -->
-    </test> <!-- AutomationTest -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testngpack.CheckBox1 -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2025-06-09T08:47:56 IST" name="FirefoxTest" finished-at="2025-06-09T08:49:48 IST" duration-ms="111992">
+      <class name="testngpack.TNG_002">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.TNG_002@7b4c50bc]" started-at="2025-06-09T08:49:12 IST" name="beforeMethod" finished-at="2025-06-09T08:49:38 IST" duration-ms="26256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="amazon()[pri:0, instance:testngpack.TNG_002@7b4c50bc]" started-at="2025-06-09T08:49:38 IST" name="amazon" finished-at="2025-06-09T08:49:42 IST" duration-ms="3448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazon -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.TNG_002@7b4c50bc]" started-at="2025-06-09T08:49:42 IST" name="afterMethod" finished-at="2025-06-09T08:49:48 IST" duration-ms="6317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testngpack.TNG_002 -->
+      <class name="testngpack.RadioButton1">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.RadioButton1@25df00a0]" started-at="2025-06-09T08:48:22 IST" name="beforeMethod" finished-at="2025-06-09T08:48:45 IST" duration-ms="22992" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="radioButtonTest()[pri:0, instance:testngpack.RadioButton1@25df00a0]" started-at="2025-06-09T08:48:45 IST" name="radioButtonTest" finished-at="2025-06-09T08:48:46 IST" duration-ms="195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- radioButtonTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.RadioButton1@25df00a0]" started-at="2025-06-09T08:48:46 IST" name="afterMethod" finished-at="2025-06-09T08:48:48 IST" duration-ms="1941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testngpack.RadioButton1 -->
+      <class name="testngpack.LinksTesting1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testngpack.LinksTesting1@4d15107f]" started-at="2025-06-09T08:48:48 IST" name="setup" finished-at="2025-06-09T08:49:08 IST" duration-ms="20299" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="linktesting1()[pri:0, instance:testngpack.LinksTesting1@4d15107f]" started-at="2025-06-09T08:49:08 IST" name="linktesting1" finished-at="2025-06-09T08:49:10 IST" duration-ms="1893" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Image Link]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- linktesting1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngpack.LinksTesting1@4d15107f]" started-at="2025-06-09T08:49:10 IST" name="tearDown" finished-at="2025-06-09T08:49:12 IST" duration-ms="2271" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testngpack.LinksTesting1 -->
+      <class name="testngpack.CheckBox1">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.CheckBox1@c05fddc]" started-at="2025-06-09T08:47:56 IST" name="beforeMethod" finished-at="2025-06-09T08:48:20 IST" duration-ms="24180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkboxTest()[pri:0, instance:testngpack.CheckBox1@c05fddc]" started-at="2025-06-09T08:48:20 IST" name="checkboxTest" finished-at="2025-06-09T08:48:20 IST" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.CheckBox1@c05fddc]" started-at="2025-06-09T08:48:20 IST" name="afterMethod" finished-at="2025-06-09T08:48:22 IST" duration-ms="1989" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testngpack.CheckBox1 -->
+    </test> <!-- FirefoxTest -->
   </suite> <!-- AutomationSuite -->
 </testng-results>

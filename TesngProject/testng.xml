@@ -6,6 +6,7 @@
       <class name="testngpack.TNG_001"/>
       <class name="testngpack.NewTest"/>
       <class name="testngpack.DemoClass"/>
+     <!--   <class name="testngpack.SampleClass"/> -->
     </classes>
   </test> <!-- AutomationTest -->
 </suite> <!-- AutomationSuite -->
