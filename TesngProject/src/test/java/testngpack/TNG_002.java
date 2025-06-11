@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import com.aventstack.extentreports.Status;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.AfterMethod;
 
@@ -12,8 +13,8 @@ public class TNG_002 extends BaseClass
 {
 	
   @BeforeMethod
-  @Parameters("browser")
-  public void beforeMethod(String btype) throws Exception 
+  @Parameters({"browser","url"})
+  public void beforeMethod(String btype,@Optional("https://www.flipkart.com/") String url) throws Exception 
   {
 	  System.out.println("BeforeMethod");
 	    init();
@@ -23,7 +24,7 @@ public class TNG_002 extends BaseClass
 		browserLaunch(btype);
 		test.log(Status.PASS, "Launched the Browser : " + btype);
 		
-		navigateUrl("amazonurl");
+		navigateUrl(url);
 		test.log(Status.FAIL, "Navigated to page : " + childProp.getProperty("amazonurl"));
   }
   

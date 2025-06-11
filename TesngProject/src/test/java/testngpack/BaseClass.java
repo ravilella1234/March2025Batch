@@ -99,7 +99,8 @@ public class BaseClass
 	
 	public static void navigateUrl(String url) throws Exception
 	{
-		driver.get(childProp.getProperty(url));
+		//driver.get(childProp.getProperty(url));
+		driver.get(url);
 		driver.manage().window().maximize();
 		
 		Thread.sleep(10000);
