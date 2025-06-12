@@ -16,7 +16,7 @@ import com.aventstack.extentreports.Status;
 public class CheckBox1  extends BaseClass
 {
 	
-	@BeforeMethod
+	@BeforeMethod(groups = {"smoke","regression"})
 	@Parameters("browser")
 	public void beforeMethod(String btype) throws Exception 
 	{
@@ -33,7 +33,7 @@ public class CheckBox1  extends BaseClass
 	}
 	  
 	  
-	@Test
+	@Test(groups = {"smoke","regression"})
 	public void checkboxTest()
 	{
 		List<WebElement> check=driver.findElements(By.xpath("//td[@class='table5']/input[@type='checkbox']"));
@@ -45,7 +45,7 @@ public class CheckBox1  extends BaseClass
 	}
  
 
-  @AfterMethod
+  @AfterMethod(groups = {"smoke","regression"})
   public void afterMethod() 
   {
 	  System.out.println("endProcess");

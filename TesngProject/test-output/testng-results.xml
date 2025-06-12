@@ -1,65 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="12" passed="12" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[Clicked on Image Link]]>
+    </line>
   </reporter-output>
-  <suite started-at="2025-06-11T09:04:08 IST" name="Suite" finished-at="2025-06-11T09:04:08 IST" duration-ms="309">
+  <suite started-at="2025-06-12T09:01:47 IST" name="Suite" finished-at="2025-06-12T09:03:06 IST" duration-ms="78920">
     <groups>
+      <group name="regression">
+        <method signature="CheckBox1.checkboxTest()[pri:0, instance:testngpack.CheckBox1@5386659f]" name="checkboxTest" class="testngpack.CheckBox1"/>
+        <method signature="LinksTesting1.linktesting1()[pri:0, instance:testngpack.LinksTesting1@70cf32e3]" name="linktesting1" class="testngpack.LinksTesting1"/>
+        <method signature="RadioButton1.radioButtonTest()[pri:0, instance:testngpack.RadioButton1@5a59ca5e]" name="radioButtonTest" class="testngpack.RadioButton1"/>
+        <method signature="TNG_002.amazon()[pri:0, instance:testngpack.TNG_002@4bdeaabb]" name="amazon" class="testngpack.TNG_002"/>
+      </group> <!-- regression -->
+      <group name="smoke">
+        <method signature="CheckBox1.checkboxTest()[pri:0, instance:testngpack.CheckBox1@5386659f]" name="checkboxTest" class="testngpack.CheckBox1"/>
+        <method signature="RadioButton1.radioButtonTest()[pri:0, instance:testngpack.RadioButton1@5a59ca5e]" name="radioButtonTest" class="testngpack.RadioButton1"/>
+      </group> <!-- smoke -->
+      <group name="sanity">
+        <method signature="TNG_002.amazon()[pri:0, instance:testngpack.TNG_002@4bdeaabb]" name="amazon" class="testngpack.TNG_002"/>
+      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-06-11T09:04:08 IST" name="Test" finished-at="2025-06-11T09:04:08 IST" duration-ms="309">
-      <class name="testngparallel.Login">
-        <test-method signature="loginWithEmptyCredientials()[pri:0, instance:testngparallel.Login@7f485fda]" started-at="2025-06-11T09:04:08 IST" name="loginWithEmptyCredientials" finished-at="2025-06-11T09:04:08 IST" duration-ms="89" status="PASS">
+    <test started-at="2025-06-12T09:01:47 IST" name="Test" finished-at="2025-06-12T09:03:06 IST" duration-ms="78920">
+      <class name="testngpack.TNG_002">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.TNG_002@4bdeaabb]" started-at="2025-06-12T09:02:47 IST" name="beforeMethod" finished-at="2025-06-12T09:03:03 IST" duration-ms="15569" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithEmptyCredientials -->
-        <test-method signature="loginWithInValidCredientials()[pri:0, instance:testngparallel.Login@7f485fda]" started-at="2025-06-11T09:04:08 IST" name="loginWithInValidCredientials" finished-at="2025-06-11T09:04:08 IST" duration-ms="44" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="amazon()[pri:0, instance:testngpack.TNG_002@4bdeaabb]" started-at="2025-06-12T09:03:03 IST" name="amazon" finished-at="2025-06-12T09:03:04 IST" duration-ms="1347" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInValidCredientials -->
-        <test-method signature="loginWithInValidUserAndvalidPassword()[pri:0, instance:testngparallel.Login@7f485fda]" started-at="2025-06-11T09:04:08 IST" name="loginWithInValidUserAndvalidPassword" finished-at="2025-06-11T09:04:08 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- amazon -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.TNG_002@4bdeaabb]" started-at="2025-06-12T09:03:04 IST" name="afterMethod" finished-at="2025-06-12T09:03:06 IST" duration-ms="1995" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithInValidUserAndvalidPassword -->
-        <test-method signature="loginWithValidCredientials()[pri:0, instance:testngparallel.Login@7f485fda]" started-at="2025-06-11T09:04:08 IST" name="loginWithValidCredientials" finished-at="2025-06-11T09:04:08 IST" duration-ms="66" status="PASS">
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testngpack.TNG_002 -->
+      <class name="testngpack.RadioButton1">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.RadioButton1@5a59ca5e]" started-at="2025-06-12T09:02:29 IST" name="beforeMethod" finished-at="2025-06-12T09:02:47 IST" duration-ms="17582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithValidCredientials -->
-        <test-method signature="loginWithValidUserAndInvalidPassword()[pri:0, instance:testngparallel.Login@7f485fda]" started-at="2025-06-11T09:04:08 IST" name="loginWithValidUserAndInvalidPassword" finished-at="2025-06-11T09:04:08 IST" duration-ms="5" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="radioButtonTest()[pri:0, instance:testngpack.RadioButton1@5a59ca5e]" started-at="2025-06-12T09:02:47 IST" name="radioButtonTest" finished-at="2025-06-12T09:02:47 IST" duration-ms="220" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginWithValidUserAndInvalidPassword -->
-      </class> <!-- testngparallel.Login -->
-      <class name="testngparallel.Register">
-        <test-method signature="registerWithDuplicateFileds()[pri:0, instance:testngparallel.Register@4b013c76]" started-at="2025-06-11T09:04:08 IST" name="registerWithDuplicateFileds" finished-at="2025-06-11T09:04:08 IST" duration-ms="47" status="PASS">
+        </test-method> <!-- radioButtonTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.RadioButton1@5a59ca5e]" started-at="2025-06-12T09:02:47 IST" name="afterMethod" finished-at="2025-06-12T09:02:47 IST" duration-ms="569" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerWithDuplicateFileds -->
-        <test-method signature="registerWithMandatoryFileds()[pri:0, instance:testngparallel.Register@4b013c76]" started-at="2025-06-11T09:04:08 IST" name="registerWithMandatoryFileds" finished-at="2025-06-11T09:04:08 IST" duration-ms="46" status="PASS">
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testngpack.RadioButton1 -->
+      <class name="testngpack.LinksTesting1">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testngpack.LinksTesting1@70cf32e3]" started-at="2025-06-12T09:02:11 IST" name="setup" finished-at="2025-06-12T09:02:26 IST" duration-ms="15323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerWithMandatoryFileds -->
-        <test-method signature="registerWithEmptyFileds()[pri:0, instance:testngparallel.Register@4b013c76]" started-at="2025-06-11T09:04:08 IST" name="registerWithEmptyFileds" finished-at="2025-06-11T09:04:08 IST" duration-ms="45" status="PASS">
+        </test-method> <!-- setup -->
+        <test-method signature="linktesting1()[pri:0, instance:testngpack.LinksTesting1@70cf32e3]" started-at="2025-06-12T09:02:26 IST" name="linktesting1" finished-at="2025-06-12T09:02:28 IST" duration-ms="2029" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Image Link]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- linktesting1 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngpack.LinksTesting1@70cf32e3]" started-at="2025-06-12T09:02:28 IST" name="tearDown" finished-at="2025-06-12T09:02:29 IST" duration-ms="1189" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerWithEmptyFileds -->
-        <test-method signature="registerWithAllFileds()[pri:0, instance:testngparallel.Register@4b013c76]" started-at="2025-06-11T09:04:08 IST" name="registerWithAllFileds" finished-at="2025-06-11T09:04:08 IST" duration-ms="46" status="PASS">
+        </test-method> <!-- tearDown -->
+      </class> <!-- testngpack.LinksTesting1 -->
+      <class name="testngpack.CheckBox1">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.CheckBox1@5386659f]" started-at="2025-06-12T09:01:48 IST" name="beforeMethod" finished-at="2025-06-12T09:02:09 IST" duration-ms="21205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- registerWithAllFileds -->
-      </class> <!-- testngparallel.Register -->
-      <class name="testngparallel.Search">
-        <test-method signature="emptyTextSearch()[pri:0, instance:testngparallel.Search@28261e8e]" started-at="2025-06-11T09:04:08 IST" name="emptyTextSearch" finished-at="2025-06-11T09:04:08 IST" duration-ms="7" status="PASS">
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkboxTest()[pri:0, instance:testngpack.CheckBox1@5386659f]" started-at="2025-06-12T09:02:09 IST" name="checkboxTest" finished-at="2025-06-12T09:02:09 IST" duration-ms="213" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- emptyTextSearch -->
-        <test-method signature="InvalidTextSearch()[pri:0, instance:testngparallel.Search@28261e8e]" started-at="2025-06-11T09:04:08 IST" name="InvalidTextSearch" finished-at="2025-06-11T09:04:08 IST" duration-ms="36" status="PASS">
+        </test-method> <!-- checkboxTest -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.CheckBox1@5386659f]" started-at="2025-06-12T09:02:09 IST" name="afterMethod" finished-at="2025-06-12T09:02:11 IST" duration-ms="1530" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- InvalidTextSearch -->
-        <test-method signature="validTextSearch()[pri:0, instance:testngparallel.Search@28261e8e]" started-at="2025-06-11T09:04:08 IST" name="validTextSearch" finished-at="2025-06-11T09:04:08 IST" duration-ms="3" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validTextSearch -->
-      </class> <!-- testngparallel.Search -->
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testngpack.CheckBox1 -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

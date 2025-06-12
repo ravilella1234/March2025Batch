@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="methods" name="Suite">
+
+  <test thread-count="5"  name="Test">
+    <classes >
+      <class name="testngparallel.Register" >
+      	<methods> 
+      		<include name="registerWithMandatoryFileds"></include>
+      		<include name="registerWithAllFileds"></include>
+      		<!-- <include name="registerWithEmptyFileds"></include>
+      		<include name="registerWithDuplicateFileds"></include>  -->
+      	</methods>
+      </class>
+      
+      <class name="testngparallel.Login">
+      	<methods>
+      		<include name="loginWithValidCredientials"></include>
+      		<include name="loginWithInValidCredientials"></include>
+      		<!-- <include name="loginWithValidUserAndInvalidPassword"></include>
+      		<include name="loginWithInValidUserAndvalidPassword"></include>
+      		<include name="loginWithEmptyCredientials"></include> -->
+      	</methods>
+      </class>
+      
+      <class name="testngparallel.Search">
+      	<methods>
+      		<include name="validTextSearch"></include>
+      		<!-- <include name="InvalidTextSearch"></include>
+      		<include name="emptyTextSearch"></include> -->
+      	</methods>
+      </class>
+      
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

@@ -12,9 +12,9 @@ import org.testng.annotations.AfterMethod;
 public class TNG_002 extends BaseClass
 {
 	
-  @BeforeMethod
-  @Parameters({"browser","url"})
-  public void beforeMethod(String btype,@Optional("https://www.flipkart.com/") String url) throws Exception 
+  @BeforeMethod(groups = {"regression","sanity"})
+  @Parameters({"browser"})
+  public void beforeMethod(String btype) throws Exception 
   {
 	  System.out.println("BeforeMethod");
 	    init();
@@ -24,12 +24,12 @@ public class TNG_002 extends BaseClass
 		browserLaunch(btype);
 		test.log(Status.PASS, "Launched the Browser : " + btype);
 		
-		navigateUrl(url);
+		navigateUrl("amazonurl");
 		test.log(Status.FAIL, "Navigated to page : " + childProp.getProperty("amazonurl"));
   }
   
   
-  @Test
+  @Test(groups = {"regression","sanity"})
   public void amazon() 
   {
 	  System.out.println("Amazon Test");
@@ -44,7 +44,7 @@ public class TNG_002 extends BaseClass
   }
   
 
-  @AfterMethod
+  @AfterMethod(groups = {"regression","sanity"})
   public void afterMethod() 
   {
 	  System.out.println("AfterMethod");

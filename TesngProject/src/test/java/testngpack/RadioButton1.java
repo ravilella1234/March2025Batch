@@ -16,7 +16,7 @@ import com.aventstack.extentreports.Status;
 public class RadioButton1 extends BaseClass
 {
 	
-	@BeforeMethod
+	@BeforeMethod(groups = {"smoke","regression"})
 	@Parameters("browser")
 	public void beforeMethod(String btype) throws Exception 
 	{
@@ -33,7 +33,7 @@ public class RadioButton1 extends BaseClass
 	 }
 	
 	
-	@Test
+	@Test(groups = {"smoke","regression"})
 	public void radioButtonTest()
 	{
 		WebElement radio=driver.findElement(By.xpath("(//td[@class='table5'])[2]"));
@@ -45,7 +45,7 @@ public class RadioButton1 extends BaseClass
 	}
  
 
-  @AfterMethod
+  @AfterMethod(groups = {"smoke","regression"})
   public void afterMethod() 
   {
 	  System.out.println("endProcess");
