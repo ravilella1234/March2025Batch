@@ -1,114 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[Clicked on Image Link]]>
-    </line>
   </reporter-output>
-  <suite started-at="2025-06-12T09:01:47 IST" name="Suite" finished-at="2025-06-12T09:03:06 IST" duration-ms="78920">
+  <suite started-at="2025-06-14T08:49:02 IST" name="Default suite" finished-at="2025-06-14T08:49:18 IST" duration-ms="15145">
     <groups>
-      <group name="regression">
-        <method signature="CheckBox1.checkboxTest()[pri:0, instance:testngpack.CheckBox1@5386659f]" name="checkboxTest" class="testngpack.CheckBox1"/>
-        <method signature="LinksTesting1.linktesting1()[pri:0, instance:testngpack.LinksTesting1@70cf32e3]" name="linktesting1" class="testngpack.LinksTesting1"/>
-        <method signature="RadioButton1.radioButtonTest()[pri:0, instance:testngpack.RadioButton1@5a59ca5e]" name="radioButtonTest" class="testngpack.RadioButton1"/>
-        <method signature="TNG_002.amazon()[pri:0, instance:testngpack.TNG_002@4bdeaabb]" name="amazon" class="testngpack.TNG_002"/>
-      </group> <!-- regression -->
-      <group name="smoke">
-        <method signature="CheckBox1.checkboxTest()[pri:0, instance:testngpack.CheckBox1@5386659f]" name="checkboxTest" class="testngpack.CheckBox1"/>
-        <method signature="RadioButton1.radioButtonTest()[pri:0, instance:testngpack.RadioButton1@5a59ca5e]" name="radioButtonTest" class="testngpack.RadioButton1"/>
-      </group> <!-- smoke -->
-      <group name="sanity">
-        <method signature="TNG_002.amazon()[pri:0, instance:testngpack.TNG_002@4bdeaabb]" name="amazon" class="testngpack.TNG_002"/>
-      </group> <!-- sanity -->
     </groups>
-    <test started-at="2025-06-12T09:01:47 IST" name="Test" finished-at="2025-06-12T09:03:06 IST" duration-ms="78920">
-      <class name="testngpack.TNG_002">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.TNG_002@4bdeaabb]" started-at="2025-06-12T09:02:47 IST" name="beforeMethod" finished-at="2025-06-12T09:03:03 IST" duration-ms="15569" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="amazon()[pri:0, instance:testngpack.TNG_002@4bdeaabb]" started-at="2025-06-12T09:03:03 IST" name="amazon" finished-at="2025-06-12T09:03:04 IST" duration-ms="1347" status="PASS">
+    <test started-at="2025-06-14T08:49:02 IST" name="Default test" finished-at="2025-06-14T08:49:18 IST" duration-ms="15145">
+      <class name="testngAssertions.HardAssertionTest">
+        <test-method signature="amazon()[pri:0, instance:testngAssertions.HardAssertionTest@19e4653c]" started-at="2025-06-14T08:49:03 IST" name="amazon" finished-at="2025-06-14T08:49:18 IST" duration-ms="14998" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[The following asserts failed:
+Both links are not equal.. expected [true] but found [false],
+err1 expected [true] but found [false],
+err3 expected [true] but found [false],
+err4 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: The following asserts failed:
+Both links are not equal.. expected [true] but found [false],
+err1 expected [true] but found [false],
+err3 expected [true] but found [false],
+err4 expected [true] but found [false]
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+at testngAssertions.HardAssertionTest.amazon(HardAssertionTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- amazon -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.TNG_002@4bdeaabb]" started-at="2025-06-12T09:03:04 IST" name="afterMethod" finished-at="2025-06-12T09:03:06 IST" duration-ms="1995" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testngpack.TNG_002 -->
-      <class name="testngpack.RadioButton1">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.RadioButton1@5a59ca5e]" started-at="2025-06-12T09:02:29 IST" name="beforeMethod" finished-at="2025-06-12T09:02:47 IST" duration-ms="17582" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="radioButtonTest()[pri:0, instance:testngpack.RadioButton1@5a59ca5e]" started-at="2025-06-12T09:02:47 IST" name="radioButtonTest" finished-at="2025-06-12T09:02:47 IST" duration-ms="220" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- radioButtonTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.RadioButton1@5a59ca5e]" started-at="2025-06-12T09:02:47 IST" name="afterMethod" finished-at="2025-06-12T09:02:47 IST" duration-ms="569" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testngpack.RadioButton1 -->
-      <class name="testngpack.LinksTesting1">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testngpack.LinksTesting1@70cf32e3]" started-at="2025-06-12T09:02:11 IST" name="setup" finished-at="2025-06-12T09:02:26 IST" duration-ms="15323" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="linktesting1()[pri:0, instance:testngpack.LinksTesting1@70cf32e3]" started-at="2025-06-12T09:02:26 IST" name="linktesting1" finished-at="2025-06-12T09:02:28 IST" duration-ms="2029" status="PASS">
-          <reporter-output>
-            <line>
-              <![CDATA[Clicked on Image Link]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- linktesting1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testngpack.LinksTesting1@70cf32e3]" started-at="2025-06-12T09:02:28 IST" name="tearDown" finished-at="2025-06-12T09:02:29 IST" duration-ms="1189" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- testngpack.LinksTesting1 -->
-      <class name="testngpack.CheckBox1">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testngpack.CheckBox1@5386659f]" started-at="2025-06-12T09:01:48 IST" name="beforeMethod" finished-at="2025-06-12T09:02:09 IST" duration-ms="21205" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="checkboxTest()[pri:0, instance:testngpack.CheckBox1@5386659f]" started-at="2025-06-12T09:02:09 IST" name="checkboxTest" finished-at="2025-06-12T09:02:09 IST" duration-ms="213" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkboxTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testngpack.CheckBox1@5386659f]" started-at="2025-06-12T09:02:09 IST" name="afterMethod" finished-at="2025-06-12T09:02:11 IST" duration-ms="1530" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testngpack.CheckBox1 -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testngAssertions.HardAssertionTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
