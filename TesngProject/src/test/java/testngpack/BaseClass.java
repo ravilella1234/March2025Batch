@@ -36,6 +36,14 @@ public class BaseClass
 	public static Properties  orProp;
 	public static ExtentReports report;
 	public static ExtentTest test;
+	public static String filePath;
+	
+	
+	static
+	{
+		Date dt = new Date();
+		filePath = dt.toString().replace(':', '_').replace(' ', '_');
+	}
 	
     public static void init() throws Exception 
     {
@@ -148,7 +156,7 @@ public class BaseClass
 
 	public static boolean isElementPresent(String locatorKey) 
 	{
-		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(30));
+		WebDriverWait wait = new WebDriverWait(driver,Duration.ofSeconds(10));
 		
 		
 		try 

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <listeners>
+    <listener class-name="testnglistners.MyListner"/>
+    <listener class-name="testnglistners.RetryListener"/>
+  </listeners>
+  <test thread-count="5" name="Amazon TestAutomation(failed)">
     <parameter name="browser" value="chrome"/>
-    <groups>
-      <run>
-        <include name="sanity"/>
-      </run>
-    </groups>
     <classes>
       <class name="testngpack.TNG_002">
         <methods>
@@ -17,5 +16,5 @@
         </methods>
       </class> <!-- testngpack.TNG_002 -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Amazon TestAutomation(failed) -->
 </suite> <!-- Failed suite [Suite] -->
