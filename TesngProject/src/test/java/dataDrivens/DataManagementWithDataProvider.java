@@ -1,11 +1,21 @@
 package dataDrivens;
 
-public class DataManagement 
-{
+import org.testng.annotations.Test;
 
-	public static void main(String[] args) throws Exception 
-	{
-		ExcelAPI e = new ExcelAPI("C:\\Users\\DELL\\Desktop\\suitex.xlsx");
+import org.testng.annotations.DataProvider;
+
+public class DataManagementWithDataProvider 
+{
+  @Test(dataProvider = "testdata")
+  public void f(String RunMode, String Browser, String UserName, String UserPassword,String ExpectedResult) 
+  {
+	  
+  }
+
+  @DataProvider
+  public Object[][] testdata() throws Exception 
+  {
+	    ExcelAPI e = new ExcelAPI("C:\\Users\\DELL\\Desktop\\suitex.xlsx");
 		String sheetName = "data";
 		String testName = "TestA";
 		
@@ -15,7 +25,7 @@ public class DataManagement
 		{
 			teststartrownum++;
 		}
-		System.out.println(testName +" Test start row number :" + teststartrownum);
+		System.out.println(testName + " start row number :" + teststartrownum);
 		
 		int colstartrownum = teststartrownum+1;
 		int datastartrownum = teststartrownum+2;
@@ -28,7 +38,6 @@ public class DataManagement
 		}
 		System.out.println("Total rows are  :" + rows);
 		
-		
 		//calculate the cols of data
 		int cols = 0;
 		while(!e.getCellData(sheetName, cols, colstartrownum).equals(""))
@@ -37,15 +46,18 @@ public class DataManagement
 		}
 		System.out.println("Total cols are : "+ cols);
 		
-		
 		//Read the test data
+		int dataRow = 0;
+		Object[][] data = new Object[rows][cols];
 		for(int rnum=datastartrownum;rnum<datastartrownum+rows;rnum++)
 		{
 			for(int cnum=0;cnum<cols;cnum++)
 			{
-				System.out.println(e.getCellData(sheetName, cnum, rnum));
+				//System.out.println(e.getCellData(sheetName, cnum, rnum));
+				data[dataRow][cnum] = e.getCellData(sheetName, cnum, rnum);
 			}
+			dataRow++;
 		}
-	}
-	
+		return data;
+  }
 }

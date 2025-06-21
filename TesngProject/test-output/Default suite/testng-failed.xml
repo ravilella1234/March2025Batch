@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testngAssertions.HardAssertionTest">
+      <class name="dataDrivens.TestPro">
         <methods>
-          <include name="amazon"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- testngAssertions.HardAssertionTest -->
+      </class> <!-- dataDrivens.TestPro -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
