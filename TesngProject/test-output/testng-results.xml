@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-21T08:59:10 IST" name="Default suite" finished-at="2025-06-21T08:59:12 IST" duration-ms="2371">
+  <suite started-at="2025-06-23T07:57:24 IST" name="Default suite" finished-at="2025-06-23T07:57:27 IST" duration-ms="2559">
     <groups>
     </groups>
-    <test started-at="2025-06-21T08:59:10 IST" name="Default test" finished-at="2025-06-21T08:59:12 IST" duration-ms="2371">
-      <class name="dataDrivens.TestPro">
-        <test-method signature="f(java.util.Hashtable)[pri:0, instance:dataDrivens.TestPro@33065d67]" started-at="2025-06-21T08:59:12 IST" name="f" data-provider="dp" finished-at="2025-06-21T08:59:12 IST" duration-ms="17" status="PASS">
+    <test started-at="2025-06-23T07:57:24 IST" name="Default test" finished-at="2025-06-23T07:57:27 IST" duration-ms="2559">
+      <class name="dataDrivens.DataManagementFinalTestVersion">
+        <test-method signature="f(java.util.Hashtable)[pri:0, instance:dataDrivens.DataManagementFinalTestVersion@48075da3]" started-at="2025-06-23T07:57:27 IST" name="f" data-provider="testData" finished-at="2025-06-23T07:57:27 IST" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-        <test-method signature="f(java.util.Hashtable)[pri:0, instance:dataDrivens.TestPro@33065d67]" started-at="2025-06-21T08:59:12 IST" name="f" data-provider="dp" finished-at="2025-06-21T08:59:12 IST" duration-ms="18" status="PASS">
+        <test-method signature="f(java.util.Hashtable)[pri:0, instance:dataDrivens.DataManagementFinalTestVersion@48075da3]" started-at="2025-06-23T07:57:27 IST" name="f" data-provider="testData" finished-at="2025-06-23T07:57:27 IST" duration-ms="14" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -29,7 +29,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f -->
-      </class> <!-- dataDrivens.TestPro -->
+      </class> <!-- dataDrivens.DataManagementFinalTestVersion -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
