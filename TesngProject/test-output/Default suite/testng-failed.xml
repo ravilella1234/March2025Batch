@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dataDrivens.TestPro">
+      <class name="testngpack.LoginTestClass">
         <methods>
           <include name="f"/>
         </methods>
-      </class> <!-- dataDrivens.TestPro -->
+      </class> <!-- testngpack.LoginTestClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
