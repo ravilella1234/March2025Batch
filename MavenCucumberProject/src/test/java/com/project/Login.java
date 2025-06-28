@@ -35,6 +35,7 @@ public class Login
 	@When("The user enters invalid email {string}")
 	public void the_user_enters_invalid_email(String string) {
 	   System.out.println(">> user has entered invalid email");
+	   //int c = 9/0;
 	}
 
 	@When("Enter invalid password {string}")
