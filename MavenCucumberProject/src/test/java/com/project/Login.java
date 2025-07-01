@@ -12,14 +12,24 @@ public class Login
 	   System.out.println(">> User has navigated to Login Page");
 	}
 
-	@When("The user enters valid email credentials {string}")
+	@When("The user enters valid email credentials (.+)")
 	public void the_user_enters_valid_email_credentials(String userEmail) {
-	    System.out.println(">> User has entered valid email credientials");
+	    System.out.println(">> User has entered valid email credientials :" +  userEmail);
+	}
+	
+	@When("The user enters valid email credentials {string}")
+	public void the_user_enters_valid_email_credential(String userEmail) {
+	    System.out.println(">> User has entered valid email credientials :" +  userEmail);
 	}
 
-	@And("Enter valid password {string}")
+	@And("Enter valid password (.+)")
 	public void enter_valid_password(String userPassword) {
-	    System.out.println(">> User has entered valid password");
+	    System.out.println(">> User has entered valid password :" + userPassword);
+	}
+	
+	@And("Enter valid password {string}")
+	public void enter_valid_passwords(String userPassword) {
+	    System.out.println(">> User has entered valid password :" + userPassword);
 	}
 
 	@When("Clicks the login button")

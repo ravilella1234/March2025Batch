@@ -12,7 +12,8 @@ import io.cucumber.junit.CucumberOptions;
 						  "html:target/html-Report.html",
 						  "json:target/json-Report.json"
 						 },
-				 dryRun = false
+				 dryRun = false,
+				 tags = "@all"
                 )
 public class TestRunner 
 {
