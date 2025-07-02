@@ -7,7 +7,7 @@ import io.cucumber.java.en.When;
 
 public class Login 
 {
-	@Given("The user navigates to the login page")
+	@Given("^The user navigates to the login page$")
 	public void the_user_navigates_to_the_login_page() {
 	   System.out.println(">> User has navigated to Login Page");
 	}

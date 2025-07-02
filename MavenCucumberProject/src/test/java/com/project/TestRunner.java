@@ -13,7 +13,17 @@ import io.cucumber.junit.CucumberOptions;
 						  "json:target/json-Report.json"
 						 },
 				 dryRun = false,
-				 tags = "@all"
+				 //@dev, @ignore, @wip, @smoke, @regression etc...
+				 /*
+				  * tags = "@SmokeTest or @Sanity or @Regression" – (Running Scenarios with at Least One Tag)
+					tags = "@SmokeTest and @Regression" - (More Than One Required)
+					tags = "(@SmokeTest or @Sanity or @Regression) and not @WIP" - (At Least One Tag, But Exclude Some)
+					tags = "(@SmokeTest or @Sanity) and not @WIP" – (Run either smoke or sanity tests, but skip WIP ones)
+					tags ="@all and not @dev and not @wip and not @ignore" – (Run @all scenarios and exclude those tagged with @WIP)
+
+				  */
+				 
+				 tags = "@all and not @wip and not @dev" 
                 )
 public class TestRunner 
 {

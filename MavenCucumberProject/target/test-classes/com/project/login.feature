@@ -12,7 +12,7 @@ Background:
     #And Clicks the login button
     #Then The user should be redirected to the dashboard
 
-@login @validcredentials @smoke @regression
+@login @validcredentials @smoke @regression @wip
  Scenario Outline: Successful login with valid credentials   
     When The user enters valid email credentials "<user>"
     And Enter valid password "<password>"
@@ -32,7 +32,7 @@ Examples:
     And Clicks the login button  
     Then An error message "Invalid username or password" should be displayed  
 
-@login @invaliduserandvalidpassword @regression
+@login @invaliduserandvalidpassword @regression @dev
   Scenario: Login with invalid user and valid password credentials    
     When The user enters invalid email "ravilella@gmail.com"
     And Enter valid password "123456"
