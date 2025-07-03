@@ -1,90 +1,12 @@
-package com.project;
+package steps;
 
-import io.cucumber.java.After;
-import io.cucumber.java.AfterStep;
-import io.cucumber.java.Before;
-import io.cucumber.java.BeforeStep;
-import io.cucumber.java.Scenario;
-import io.cucumber.java.en.*;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class Registration 
 {
 	
-	/*@Before("@register")
-	public void setup()
-	{
-		System.out.println("++ Starting setup Before Hook");
-	}
-	
-	@After("@register")
-	public void killUp()
-	{
-		System.out.println("++ Ending killup After Hook");
-	}*/
-	
-	
-	/*@BeforeStep("@register")
-	public void beforeStepSetup()
-	{
-		System.out.println("++ BeforeStep of each Step");
-	}
-	
-	@AfterStep("@register")
-	public void afterStepTeardown()
-	{
-		System.out.println("-- AfterStep of each Step");
-	}*/
-	
-	
-	/*@Before(value="@register or @login",order = 0)
-	public void setupone()
-	{
-		System.out.println("++ BeforHook for SetUpOne");
-	}
-	
-	@Before(value="@register or @login",order = 1)
-	public void setuptwo()
-	{
-		System.out.println("++ BeforeHook for SetUpTwo");
-	}
-	
-	@Before(value="@register or @login",order = 2)
-	public void setupthree()
-	{
-		System.out.println("++ BeforeHook for SetUpThree");
-	}
-	
-	@After(value="@register or @login",order = 2)
-	public void teardownone()
-	{
-		System.out.println("-- AferHook for teardownOne");
-	}
-	
-	@After(value="@register or @login",order = 1)
-	public void teardownTwo()
-	{
-		System.out.println("-- AfterHook for teardownTwo");
-	}
-	
-	@After(value="@register@login",order = 0)
-	public void teardownThree()
-	{
-		System.out.println("-- AfterHook for teardownThree");
-	}*/
-	
-	
-	
-	@Before("@all")
-	public void setup(Scenario scenario)
-	{
-		System.out.println("++ Starting setup Before Hook :"+ scenario.getName());
-	}
-	
-	@After("@all")
-	public void killUp(Scenario scenario)
-	{
-		System.out.println("-- Ending killup After Hook :" +  scenario.getStatus());
-	}
 	
 	@Given("User navigates to Register Account page")
 	public void user_navigates_to_register_account_page() {
