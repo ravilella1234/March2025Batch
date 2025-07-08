@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Clicked on Image Link]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-07-08T08:44:27 IST" name="Suite" finished-at="2025-07-08T08:45:04 IST" duration-ms="36997">
+    <groups>
+    </groups>
+    <test started-at="2025-07-08T08:44:27 IST" name="LinkTest1" finished-at="2025-07-08T08:44:50 IST" duration-ms="23630">
+      <class name="tests.LinksTesting1">
+        <test-method is-config="true" signature="startup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.LinksTesting1@76c3e77a]" started-at="2025-07-08T08:44:27 IST" name="startup" finished-at="2025-07-08T08:44:42 IST" duration-ms="15437" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[https://google.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="linktesting1()[pri:0, instance:tests.LinksTesting1@76c3e77a]" started-at="2025-07-08T08:44:42 IST" name="linktesting1" finished-at="2025-07-08T08:44:49 IST" duration-ms="6351" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Image Link]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- linktesting1 -->
+        <test-method is-config="true" signature="endup()[pri:0, instance:tests.LinksTesting1@76c3e77a]" started-at="2025-07-08T08:44:49 IST" name="endup" finished-at="2025-07-08T08:44:50 IST" duration-ms="1722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endup -->
+      </class> <!-- tests.LinksTesting1 -->
+    </test> <!-- LinkTest1 -->
+    <test started-at="2025-07-08T08:44:27 IST" name="CheckTest1" finished-at="2025-07-08T08:45:04 IST" duration-ms="36996">
+      <class name="tests.CheckBox1">
+        <test-method is-config="true" signature="startup(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:tests.CheckBox1@5acf93bb]" started-at="2025-07-08T08:44:27 IST" name="startup" finished-at="2025-07-08T08:44:57 IST" duration-ms="30624" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[http://echoecho.com/htmlforms09.htm]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startup -->
+        <test-method signature="checkboxTest()[pri:0, instance:tests.CheckBox1@5acf93bb]" started-at="2025-07-08T08:44:57 IST" name="checkboxTest" finished-at="2025-07-08T08:44:58 IST" duration-ms="638" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkboxTest -->
+        <test-method is-config="true" signature="endup()[pri:0, instance:tests.CheckBox1@5acf93bb]" started-at="2025-07-08T08:44:58 IST" name="endup" finished-at="2025-07-08T08:45:04 IST" duration-ms="5650" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endup -->
+      </class> <!-- tests.CheckBox1 -->
+    </test> <!-- CheckTest1 -->
+  </suite> <!-- Suite -->
+</testng-results>
