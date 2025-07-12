@@ -1,0 +1,36 @@
+pwd - present working directory
+ls - lists all the files and the folders
+cd - change directory
+cd .. - comes out of 1 folder
+mkdir folderName - creates folder
+cd FolderName - 
+git init - initializes the git folder
+git status - gives the status
+git add filename - changing unstagged to stagged (after adding folders in local drive)
+git rm --cached filename - changing stagged to unstagged.
+git commit -m "commit msg" - commiting brand new files.
+git log - checks how many commits we have done
+git log --oneline - display commit msg in oneline
+git commit -a -m "commit msg" - Already stagged files to commit
+touch fileName - to create file from gitbash
+cat fileName - to see the content present in file
+vim fileName - to create and edit files (click insert to start editing, and click esc and enter :wq! to save and quit from file).
+
+cd directoryname - add the continuation directory location.
+git add . - takes all files to move from unstagged to stagged
+git ls-files - displays all stagged files
+git clone remoterepositoryurl - clones respository from remote to local.
+
+git clone <respositoryurl>
+git push origin main - to push the changes from local to remote.
+git pull origin main - to pull the modified changes from remote to local.
+
+git branch - To know about available branches
+git branch <branchname> - creates new branch
+git checkout <branchname> - switch to branch
+Note: do some changes in main branch and sub branch and try to merge that branch codes.
+Note2: Switch to main branch while merging the branches.
+git merge <subbranch> - 
+Note: After merging completes do add and commit.
+
+
