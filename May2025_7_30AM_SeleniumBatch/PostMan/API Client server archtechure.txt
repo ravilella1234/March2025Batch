@@ -1,0 +1,108 @@
+https://www.ibm.com/in-en
+https://plugins.katalon.com/
+https://reqres.in/api/users?page=2
+https://httpbin.org/robots.txt
+https://www.ignou.ac.in/
+
+
+
+Client could be a browser,which request for server
+Client could be your computer,which request for server
+Client could be your Automation tool Postman ,which request for server
+Client could be your selenium tool,which request for server
+Client could be your smart(Refrigerator,Fan,AC,Phone,watch),which request for server
+
+Server is another computer which recieves your request from client
+
+
+PROTOCOL:
+---------
+It is set of rules, regulations, guidlines that follows while sending API requests to the server.
+
+HTTP       - HyperText Transfer Protocol
+HTTPS      - HyperText Transfer Protocol + security
+FTP,SFTP   - To send the files from client to server
+MQTT       - For Big Data
+LDAP       - For active Directory
+FILE       - To open the file from windows directory
+SQL        - To work with SQL Databases
+IMAP,POP3  - For incoming Emails
+SMTP       - For outgoing Emails
+
+
+HTTP - HyperText Transfer Protocol
+1) unsecured protocol
+2) Plain text/clear text
+
+Ex:
+--- 
+http://www.ravi.com/make-payment
+cc: 1234-5678-9876-5432
+cvv: 123
+
+
+HTTPS - HyperText Transfer Protocol + security
+1) secured protocol
+2) Not in plain text/not in clear text
+3) Encrypted Text
+
+
+cryptographic protocols
+-----------------------
+SSL - secured sockets layer
+TLS - Transport Layer security
+
+HTTP + SSL = HTTPS
+or
+HTTP + TLS = HTTPS
+
+HTTP METHODS (or) HTTP VERBS
+----------------------------
+
+To reveal the type of request made by client to the server, we use HTTP METHODS/HTTP VERBS
+
+1) GET  - To retrieve existing info/data from the DB/server as select query in DB language
+
+eg : Visiting any website, opening the links
+
+
+2) POST -  To create new data on the DB/server, same as Insert query in DB language
+
+eg : sign-up to any website, sending a message on whatsapp/email/fb.com
+
+
+3) PUT - To replace/update/modify the existing data/info on the DB/server; same as update query in DB Language
+
+Can be used for full or partial updates
+
+eg : Updating your details on any website; change password
+
+4) PATCH - To replace/update/modify the existing data/info on the DB/server; same as update query in DB Language
+
+Can be used for partial updates
+
+5) DELETE - To delete the existing data on the DB/server; Same as REMOVE/DELETE/DROP query in DB language
+
+
+REQUEST HEADERS :  
+-----------------
+This is the additional meta-data that client sends to the server,along with API request
+
+C - send a request
+S - who are you, In which lanuage you need response; send a response
+
+USER-AGENT : Window 10 + 64-bit + Chrome v91
+ACCEPT LANG : EN-US ; EN-GB ; EN-IND ; EN-AUS
+ACCEPT/CONTENT-TYPE : json, xml, html, text, yaml, pdf
+
+CONNECTION : keep-alive; closed
+
+http response codes
+
+ 
+
+
+
+
+
+
