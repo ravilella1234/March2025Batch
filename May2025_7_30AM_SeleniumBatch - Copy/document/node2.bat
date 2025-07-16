@@ -1,0 +1,1 @@
+java -jar D:\selenium-server-4.34.0.jar node --hub http://localhost:4444/grid/register --port 6666

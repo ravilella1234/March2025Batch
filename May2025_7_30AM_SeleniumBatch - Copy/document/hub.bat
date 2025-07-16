@@ -1,0 +1,1 @@
+java -jar D:\selenium-server-4.34.0.jar hub

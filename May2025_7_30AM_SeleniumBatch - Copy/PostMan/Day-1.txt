@@ -1,0 +1,75 @@
+
+API is to communite & data transfer among the modules from enterprise applications 
+
+Swiggy
+Zomato
+Zepto
+
+ola 
+uber
+insta mart
+
+blink it
+
+Communication/ Descriptive Language they use
+---------------------------------------------
+1) HTML - Hyper Test Markup Language
+2) XML - Extensive Marpup language
+3) JSON - Java script object notation
+4) Plan Text
+5) Yaml - Yaml is not a markup Language
+
+
+Languages used to develop the API's
+-----------------------------------
+1) Java
+2) .Net
+3) Node js
+4) PHP
+5) Express JS
+
+Tools used for Testing the API Functions
+----------------------------------------
+1) Postman
+2) Swager
+3) Rest API
+4) Soup UI
+
+
+<html>
+<body>
+ Hello Welcome to API Testing
+</body>
+</html>
+
+
+<XML>
+<body>
+<message>
+  Hello Welcome to API Testing
+</message>
+</body>
+</XML>
+
+{
+  "key" :  "value"
+  "key" :  "value"
+}
+
+
+{
+  name: "ravi"
+  cource :"API"
+}
+
+
+
+Hello Welcome to API Testing
+
+
+
+
+
+
+
+

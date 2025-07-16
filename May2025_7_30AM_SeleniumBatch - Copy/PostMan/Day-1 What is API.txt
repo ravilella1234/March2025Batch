@@ -1,0 +1,36 @@
+What is API?
+Application Programming Interface 
+It use to communicate & data transfer between the modules of enterprise application
+
+
+Common Descriptive Language
+---------------------------
+HTML  - Hyper text markup Language
+XML   - Extensive Markup Language
+JSON  - Java Script Object Notation
+YAML  - Yaml is not a markup language
+PLAN TEXT
+
+
+To Devlop The API What Languages used:
+1) Java 
+2) .net
+3) node js
+4) php
+5) Ruby rails
+6) Express JS
+
+As a Tester which Tools we use to Test
+1) POSTMAN
+2) SOUP UI
+3) TALEND
+4) REST Assured API
+5) CATALON STUDIO
+
+
+
+
+
+
+
+

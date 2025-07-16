@@ -1,0 +1,62 @@
+-- not null constraint
+create table student(sno int not null,sname varchar(30),address varchar(30));
+describe student;
+
+insert into student (sno,sname,address) values(3,'varun','hyderabad');
+select * from student;
+
+-- unique constraint
+create table student1(sno int unique,sname varchar(30),address varchar(30));
+describe student1;
+
+insert into student1 (sno,sname,address) values(null,'varun','hyderabad');
+select * from student1;
+
+
+create table student2(sno int not null unique,sname varchar(30),address varchar(30));
+describe student2;
+
+insert into student2 (sno,sname,address) values(1,'kiran','hyderabad');
+select * from student2;
+
+-- Primary Key
+create table student3(sno int primary key,sname varchar(30),address varchar(30));
+describe student3;
+
+insert into student3 (sno,sname,address) values(1,'teja','hyderabad');
+select * from student3;
+
+
+-- check constraint
+create table student4(sno int primary key,sname varchar(30),address varchar(30),age int check (age>18));
+describe student4;
+
+alter table student4 modify column age int check (age>18 and age<30);
+
+insert into student4 values(2,'kiran','hyderabad',25);
+select * from student4;
+
+delete from student4 where sno=null;
+
+
+-- Default constraint
+create table student5(sno int primary key,sname varchar(30),address varchar(30),age int default '18');
+describe student5;
+
+insert into student5 (sno,sname,address) values(3,'varun','hyderabad');
+select * from student5;
+
+-- Auto_increment
+create table student6(sno int primary key auto_increment,sname varchar(30),address varchar(30),age int default '18');
+describe student6;
+
+insert into student6 (sname,address) values('varun','hyderabad');
+select * from student6;
+
+-- update command
+update student6 set sname='ravikanth' where sno=1;
+select * from student6;
+
+-- delete command
+delete from student6 where sno=1;
+select * from student6;

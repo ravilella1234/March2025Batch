@@ -1,0 +1,36 @@
+create database junedb;
+use junedb;
+create table employee(emp_id int,emp_name varchar(50),emp_add varchar(50));
+describe employee;
+
+-- modify the existing table interm to (Adding, Modifying, Rename, Drop) 
+-- by using Alter Command
+
+alter table employee add(emp_pno int);
+
+alter table employee modify column emp_name varchar(40);
+
+alter table employee rename column emp_name to ename;
+
+alter table employee drop column emp_pno;
+
+select * from employee;
+
+insert into employee value(101,'ravi','hyderabad');
+
+insert into employee values(102,'kiran', 'warangal'),
+						   (103,'vamsi','guntur'),
+                           (104,'varun','kukatpally');
+                           
+insert into employee (ename,emp_id,emp_add) values('teja',105,'miyapur'),
+												  ('sailaja',106,'lgnagar');
+
+rename table employee to emp;
+
+describe employee;
+describe emp;
+select * from emp;
+
+truncate table emp;
+drop table emp;
+

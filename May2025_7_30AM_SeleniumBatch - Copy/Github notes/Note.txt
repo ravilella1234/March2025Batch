@@ -1,0 +1,8 @@
+1) Created Maven Project In Local Workspace
+2) Share the Project
+3) Add To Index
+4) Commit to local git Repo
+5) Create new repository in remote ,same as project name
+6) Create the New Branch from eclipse in Git Repository section --> Branch -> Create & Switch Branch
+7) Push into Remote repo to your desired branch
+8) Raise PR Request to the Lead

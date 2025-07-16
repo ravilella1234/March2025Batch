@@ -1,0 +1,25 @@
+
+What is a DataBase?
+A database is an organized collection of data that is stored and accessed.
+It allows users to store,retrive,modify & manipulation data effectively.
+
+DB are used widely such as websites like- Banking, Inventory management etc.....
+
+Files
+Excels 
+DBMS  - DataBase Management System
+RDBMS - Relational DataBase Management System
+sql - Structured Query Language
+
+
+RDBMS - Mysql, oracle, postgre, ms-accessetc...
+NoSql - MangoDB, cassandra etc...
+Could DB's
+In-Memory DB
+
+Typically every DB has minimum two interfaces
+---------------------------------------------
+1) GUI - Graphical User Interface
+2) CLI - Command Line Interface
+3) Toad
+4) Sqirell
